@@ -73,11 +73,11 @@
             @apply text-dark-blue
         }
 
-        .navigation__button, .herosection__button, .impressions__button, .grow-business__button, .product-herosection__get-started{
+        .navigation__button, .herosection__button, .impressions__button, .grow-business__button, .product-herosection__btn{
             @apply bg-dark-blue py-3 px-5 text-white rounded-md font-bold
         }
 
-        .product-herosection__contact-btn{
+        .product-herosection__btn--contact{
           @apply py-3 px-5 border border-dark-blue rounded-md
         }
 
@@ -223,7 +223,7 @@
           .product-herosection__buttons{
             @apply flex gap-5
           }
-          .product-herosection__image{
+          .product-herosection__image-container{
             @apply w-1/2
           }
           .product-herosection__img{
@@ -319,7 +319,7 @@
             @apply flex justify-between
         }
 
-        .footer__social-icon{
+        .footer__social-icons{
             @apply flex gap-5
         }
 
