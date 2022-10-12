@@ -10,13 +10,13 @@
 
 @layer base {
     h1 {
-      @apply text-[56px]   font-extrabold;
+      @apply text-[56px]   font-extrabold text-dark-blue;
     }
     h2 {
-      @apply text-[48px]   font-extrabold;
+      @apply text-[48px]   font-extrabold  text-dark-blue;
     }
     h3 {
-      @apply text-[32px]    font-extrabold;
+      @apply text-[32px]    font-extrabold  text-dark-blue;
     }
     h4 {
       @apply text-[24px]    font-extrabold;
@@ -65,7 +65,7 @@
             @apply flex gap-6 items-center
         }
 
-        .navigation__list{
+        .navigation__list-item{
             @apply flex gap-6
         }
 
@@ -73,8 +73,12 @@
             @apply text-dark-blue
         }
 
-        .navigation__button, .herosection__button, .impressions__button, .grow-business__button{
+        .navigation__button, .herosection__button, .impressions__button, .grow-business__button, .product-herosection__get-started{
             @apply bg-dark-blue py-3 px-5 text-white rounded-md font-bold
+        }
+
+        .product-herosection__contact{
+          @apply py-3 px-5 border border-dark-blue rounded-md
         }
 
         .herosection{
@@ -118,7 +122,7 @@
             @apply flex bg-light-purple rounded-md py-5 px-8 gap-6
         }
 
-        .services__icon{
+        .services__type-icon{
             @apply w-12 h-12
         }
 
@@ -131,29 +135,29 @@
             @apply opacity-[0.87]
         }
 
-        .workwithus, .discover{
+        .work-with-us, .discover{
             @apply px-10 flex justify-between py-32 items-center
         }
-        .workwithus__description, .discover__description{
+        .work-with-us__description, .discover__description{
             @apply  basis-1/2
         }
 
-        .workwithus__list, .discover__list{
+        .work-with-us__list, .discover__list{
             @apply basis-2/5
         }
 
-        .workwithus__card, .discover__card{
+        .work-with-us__card, .discover__card{
             @apply flex gap-3 items-center basis-96
         }
 
-        .workwithus__icon{
+        .work-with-us__icon{
             @apply bg-light-orange py-3 px-3 w-12 h-12 rounded-full
         }
         .discover__icon{
             @apply bg-light-gray py-3 px-3 w-12 h-12 rounded-full
         }
 
-        .workwithus__img{
+        .work-with-us__img{
             @apply w-6
         }
 
@@ -207,6 +211,10 @@
           .product-herosection__description{
             @apply w-2/5 font-extrabold flex flex-col gap-4
           }
+
+          .product-herosection__buttons{
+            @apply flex gap-5
+          }
           .product-herosection__image{
             @apply w-1/2
           }
@@ -222,7 +230,7 @@
             @apply basis-80
           }
 
-          .product-services__icon{
+          .product-services__type-icon{
             @apply w-10
           }
 
@@ -246,6 +254,13 @@
 
           .grow-business__heading{
             @apply w-3/5 text-center font-extrabold 
+          }
+
+          .product-service__heading-div{
+            @apply flex justify-center
+          }
+          .product-service__heading{
+            @apply text-center
           }
 
           .footer{

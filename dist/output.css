@@ -413,16 +413,22 @@ video {
 h1 {
   font-size: 56px;
   font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
 h2 {
   font-size: 48px;
   font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
 h3 {
   font-size: 32px;
   font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
 h4 {
@@ -601,7 +607,7 @@ p {
   gap: 1.5rem;
 }
 
-.navigation__list {
+.navigation__list-item {
   display: flex;
   gap: 1.5rem;
 }
@@ -611,7 +617,7 @@ p {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.navigation__button,  .herosection__button,  .impressions__button,  .grow-business__button {
+.navigation__button,  .herosection__button,  .impressions__button,  .grow-business__button,  .product-herosection__get-started {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -622,6 +628,17 @@ p {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.product-herosection__contact {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(29 33 48 / var(--tw-border-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .herosection {
@@ -704,7 +721,7 @@ p {
   padding-right: 2rem;
 }
 
-.services__icon {
+.services__type-icon {
   height: 3rem;
   width: 3rem;
 }
@@ -720,7 +737,7 @@ p {
   opacity: 0.87;
 }
 
-.workwithus,  .discover {
+.work-with-us,  .discover {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -730,22 +747,22 @@ p {
   padding-bottom: 8rem;
 }
 
-.workwithus__description,  .discover__description {
+.work-with-us__description,  .discover__description {
   flex-basis: 50%;
 }
 
-.workwithus__list,  .discover__list {
+.work-with-us__list,  .discover__list {
   flex-basis: 40%;
 }
 
-.workwithus__card,  .discover__card {
+.work-with-us__card,  .discover__card {
   display: flex;
   flex-basis: 24rem;
   align-items: center;
   gap: 0.75rem;
 }
 
-.workwithus__icon {
+.work-with-us__icon {
   height: 3rem;
   width: 3rem;
   border-radius: 9999px;
@@ -769,7 +786,7 @@ p {
   padding-right: 0.75rem;
 }
 
-.workwithus__img {
+.work-with-us__img {
   width: 1.5rem;
 }
 
@@ -865,6 +882,11 @@ p {
   font-weight: 800;
 }
 
+.product-herosection__buttons {
+  display: flex;
+  gap: 1.25rem;
+}
+
 .product-herosection__image {
   width: 50%;
 }
@@ -892,7 +914,7 @@ p {
   flex-basis: 20rem;
 }
 
-.product-services__icon {
+.product-services__type-icon {
   width: 2.5rem;
 }
 
@@ -929,6 +951,15 @@ p {
   width: 60%;
   text-align: center;
   font-weight: 800;
+}
+
+.product-service__heading-div {
+  display: flex;
+  justify-content: center;
+}
+
+.product-service__heading {
+  text-align: center;
 }
 
 .footer {
@@ -1026,20 +1057,8 @@ p {
   opacity: 0.5;
 }
 
-.flex {
-  display: flex;
-}
-
 .grow {
   flex-grow: 1;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .font-semibold {
