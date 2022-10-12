@@ -240,7 +240,7 @@
           .marketing--reversed{
             @apply flex-row-reverse
           }
-          .marketing__paragraph{
+          .marketing__description-paragraph{
             @apply w-5/6 
           }
 
