@@ -10,22 +10,22 @@
 
 @layer base {
     h1 {
-      @apply text-[56px]   font-extrabold text-dark-blue;
+      @apply text-[56px] font-extrabold text-dark-blue;
     }
     h2 {
-      @apply text-[48px]   font-extrabold  text-dark-blue;
+      @apply text-[48px] font-extrabold  text-dark-blue;
     }
     h3 {
-      @apply text-[32px]    font-extrabold  text-dark-blue;
+      @apply text-[32px] font-extrabold  text-dark-blue;
     }
     h4 {
-      @apply text-[24px]    font-extrabold;
+      @apply text-[24px] font-extrabold;
     }
     h5 {
       @apply text-[18px] ;
     }
     h6 {
-      @apply text-[16px]  opacity-[0.87] font-semibold;
+      @apply text-[16px] opacity-[0.87] font-semibold;
     }
     p {
       @apply text-[16px];
@@ -65,11 +65,11 @@
             @apply flex gap-6 items-center
         }
 
-        .navigation__list-item{
+        .navigation__list{
             @apply flex gap-6
         }
 
-        .navigation__item{
+        .navigation__list-item{
             @apply text-dark-blue
         }
 
@@ -106,7 +106,7 @@
 
         }
 
-        .services{
+        .services, .features{
             @apply flex flex-col justify-center items-center gap-8 px-10
         }
 
@@ -165,11 +165,11 @@
             @apply flex justify-between px-10 items-center
         }
 
-        .impressions__description,   .marketing__description{
+        .impressions__description, .marketing__description{
             @apply basis-1/2 flex flex-col gap-5
         }
 
-        .impressions__image,       .marketing__image{
+        .impressions__image, .marketing__image{
             @apply  w-2/5
         }
         .impressions__button{
@@ -186,6 +186,14 @@
         
           .partners__company {
             @apply w-[12vw];
+          }
+
+          .features{
+            @apply services border-r
+          }
+
+          .features__wrapper{
+            @apply services__wrapper bg-light-pink 
           }
 
           .testimonials{
@@ -290,7 +298,11 @@
             @apply w-1/4 flex flex-col gap-2
           }
 
-          .footer__subscribe-div{
+          .footer__subscribe-text{
+            @apply font-semibold text-white
+          }
+
+          .footer__subscribe-form{
             @apply relative  w-full
         }
 
